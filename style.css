@@ -14,6 +14,7 @@ body{  background: #e2e1e0;
     background: -webkit-radial-gradient(center, #24AEFF, #688BF6);
     background: -moz-radial-gradient(center, #24AEFF, #688BF6);
     background: radial-gradient(ellipse at center, #24AEFF, #688BF6);
+    padding:2vh;
 }
 
 .consigne-row {
@@ -34,11 +35,6 @@ body{  background: #e2e1e0;
     margin-bottom: 2vh;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 
-}
-
-.exercice-container {
-    display: flex;
-    justify-content: center;
 }
 
 /*Une fenêtre en css*/
@@ -127,18 +123,18 @@ body{  background: #e2e1e0;
 
 #smallWindow{
     position: absolute;
-    left: 110vh;
-    top: 70vh;
+    left: 50vw;
+    bottom: 10vh;
 }
 
 #mediumWindow {
     position: absolute;
-    left: 120vh;
-    bottom: 45vh;
+    left: 60vw;
+    bottom: 47vh;
 }
 
 #bigWindow {
     position: absolute;
-    left: 20vh;
+    left: 10vw;
     bottom: 20vh;
 }
