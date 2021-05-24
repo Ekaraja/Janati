@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader&display=swap');
+
+html {
+    height: 100%;
+}
+
+body{  background: #e2e1e0;
+/*    background: #EAABC7;*/
+/*    background: -webkit-radial-gradient(center, #EAABC7, #A2A956);*/
+/*    background: -moz-radial-gradient(center, #EAABC7, #A2A956);*/
+/*    background: radial-gradient(ellipse at center, #EAABC7, #A2A956);*/
+    height: 100%;
+    background: #24AEFF;
+    background: -webkit-radial-gradient(center, #24AEFF, #688BF6);
+    background: -moz-radial-gradient(center, #24AEFF, #688BF6);
+    background: radial-gradient(ellipse at center, #24AEFF, #688BF6);
+}
+
+.consigne-row {
+    display: flex;
+    justify-content: center;
+}
+.consigne {
+    font-family: 'Newsreader', serif;
+    width: 500px;
+    min-height: 50px;
+    border-radius: 20px;
+    background: #FFFFFF;
+    background: -webkit-radial-gradient(center, #FFFFFF, #F9F9F9);
+    background: -moz-radial-gradient(center, #FFFFFF, #F9F9F9);
+    background: radial-gradient(ellipse at center, #FFFFFF, #F9F9F9);
+    color: #1f1f1f;
+    padding: 20px;
+    margin-bottom: 2vh;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+}
+
+.exercice-container {
+    display: flex;
+    justify-content: center;
+}
+
+/*Une fenêtre en css*/
+
+.size-small {
+    width: 30vh;
+    height: 25vh;
+}
+
+.size-medium {
+    width: 50vh;
+    height: 30vh;
+}
+
+.size-big {
+    width: 60vh;
+    height: 50vh;
+}
+
+.window {
+    border-radius: 8px;
+    border: 1px solid lightgrey;
+    background: #FFFFFF;
+    background: -webkit-radial-gradient(center, #FFFFFF, #EBEBEB);
+    background: -moz-radial-gradient(center, #FFFFFF, #EBEBEB);
+    background: radial-gradient(ellipse at center, #FFFFFF, #EBEBEB);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.top-bar {
+    height: 30px;
+    background-image: linear-gradient(0deg, rgb(156, 156, 156) 0%, rgb(227, 227, 227) 100%);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.top-bar-button {
+    height: 20px;
+    width: 20px;
+    border: lightgrey;
+    margin: 0 3px;
+    border-radius: 8px;
+}
+
+.reduce {
+    background: linear-gradient(0deg, rgba(255,205,0,1) 0%, rgb(255, 240, 211) 100%);
+}
+
+.resize {
+    background: linear-gradient(0deg, #96ff9b 0%, rgb(249, 249, 249) 100%);
+}
+
+.close {
+    background: linear-gradient(0deg, #ff4444 0%, rgb(255, 208, 208) 100%);
+}
+
+.reduce:hover {
+    background: linear-gradient(0deg, rgb(194, 157, 0) 0%, rgb(255, 240, 211) 100%);
+}
+
+.resize:hover {
+    background: linear-gradient(0deg, #77cb7b 0%, rgb(249, 249, 249) 100%);
+}
+
+.close:hover {
+    background: linear-gradient(0deg, #c13333 0%, rgb(255, 208, 208) 100%);
+}
+
+
+/*EXERCICE WINDOWS*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 15em 40em 4em;
+    grid-template-rows: 20em 10em;
+    gap: 0px 0px;
+    grid-template-areas:
+            "medium . small"
+            ". big ."
+            ". . .";
+}
+
+#smallWindow{
+    position: absolute;
+    left: 110vh;
+    top: 70vh;
+}
+
+#mediumWindow {
+    position: absolute;
+    left: 120vh;
+    bottom: 45vh;
+}
+
+#bigWindow {
+    position: absolute;
+    left: 20vh;
+    bottom: 20vh;
+}
